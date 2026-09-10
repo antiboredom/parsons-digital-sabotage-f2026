@@ -1,3 +1,4 @@
+import time
 from subprocess import run
 
 lines = open("./thetrial.txt").readlines()
@@ -8,3 +9,4 @@ for line in lines:
     message = line.replace("\\", "\\\\").replace('"', '\\"')
     command = f'tell application "Messages" to send "{message}" to buddy "{number}"'
     run(["osascript", "-e", command])
+    time.sleep(1)
