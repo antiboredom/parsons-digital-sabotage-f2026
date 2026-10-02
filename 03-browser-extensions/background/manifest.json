@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Background Example",
+  "version": "1.0",
+  "description": "Example background extension",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

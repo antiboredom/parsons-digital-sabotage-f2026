@@ -1,0 +1,7 @@
+[project]
+name = "04-browser-automation"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "playwright>=1.63.0",
+]
