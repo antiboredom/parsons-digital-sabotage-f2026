@@ -1,0 +1,7 @@
+[project]
+name = "06-bots"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "camoufox[geoip]>=0.5.8",
+]
