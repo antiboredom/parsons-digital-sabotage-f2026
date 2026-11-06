@@ -29,6 +29,8 @@ def login():
         page.locator('input[name="username"]').fill(USERNAME)
         human_pause()
 
+        # this is another way of filling out forms -- it presses each key sequentially
+        # somewhat more realistic human behavior
         # page.locator('input[name="password"]').press_sequentially(USERNAME, delay=random.randint(80, 160))
 
         page.locator('input[name="password"]').fill(PASS)
@@ -50,6 +52,8 @@ def browse():
         page = context.new_page()
         page.goto("https://old.reddit.com/r/all", wait_until="domcontentloaded")
         human_pause(lo=10, hi=20)
+
+        # then you could do something with the content, like scrape it
 
 
 def random_post():
